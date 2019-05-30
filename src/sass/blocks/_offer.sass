@@ -1,0 +1,104 @@
+.offer
+  background: url(../img/offer/offer.png) no-repeat
+  background-position: center right
+  background-size: contain
+  position: relative
+  &:before
+    content: ''
+    height: 100%
+    width: 50%
+    position: absolute
+    left: 0
+    top: 0
+    background: #ffffff
+  &-block
+    position: relative
+    width: 50%
+    padding-right: 90px
+  &__title
+    max-width: 360px
+    line-height: 35px
+    margin-bottom: 21px
+  &__subtitle
+    display: block
+    max-width: 240px
+    font-weight: 400
+    margin-bottom: 30px
+  &__input
+    max-width: 240px
+    width: 100%
+    margin-bottom: 30px
+    padding: 23px 26px
+    &:first-child
+      margin-right: 10px
+  &__button
+    width: 100%
+    font-size: 16px
+    line-height: 18px
+    +bold
+  &-info
+    display: flex
+    justify-content: space-between
+    width: 100%
+    &__description
+      margin-top: 27px
+      max-width: 230px
+      line-height: 24px
+  &-connection
+    &__description
+      display: block
+      margin-top: 25px
+      line-height: 24px
+      margin-right: 9px
+    &__phone
+      display: inline-block
+      +bold
+      text-decoration: none
+      color: $text-color
+      line-height: 28px
+@media (max-width: 1200px)
+  .offer
+    background-size: cover
+    &__input
+      max-width: 100%
+      margin-bottom: 10px
+    &__button
+      font-size: 12px
+    &-info
+      flex-direction: column
+      &__description
+        margin-top: 10px
+    &-connection
+      &__description
+        margin-top: 0px
+@media (max-width: 768px)
+  .offer
+    background: #fff
+    &-block
+      width: 100%
+      padding-right: 0
+@media (max-width: 567px)
+  .offer
+    &__title
+      font-size: 18px
+      line-height: 21px
+      max-width: 270px
+      margin-bottom: 19px
+    &__subtitle
+      font-size: 14px
+      margin-bottom: 26px
+    &__input
+      margin-bottom: 9px
+    &__button
+      +bold
+      font-size: 14px
+      padding: 18px 35px
+    &-info
+      &__description
+        margin-top: 20px
+        margin-left: 5px
+    &-connection
+      &__description
+        margin-left: 5px
+        margin-top: 5px
+    
