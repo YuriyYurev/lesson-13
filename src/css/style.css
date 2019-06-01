@@ -95,6 +95,13 @@ img {
   font-size: 15px;
 }
 
+.input:focus {
+  outline: none;
+  border: 1px solid #ffd200;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
 @media (max-width: 567px) {
   .section {
     padding: 32px 0;
