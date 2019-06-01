@@ -1,4 +1,4 @@
-/* $(document).ready(function() {
+$(document).ready(function() {
   var button = $('#button');
   var modal = $('#modal');
   var buttonClose = $('#close');
@@ -8,4 +8,4 @@
   buttonClose.on('click', function() {
     modal.removeClass('modal_active');
   });
-}); */
+});

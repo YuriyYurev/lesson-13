@@ -504,4 +504,15 @@ img {
   right: 0;
   top: 0;
 }
+
+/* Подключение button anchor */
+.button__anchor {
+  font-family: 'Museo Sans Cyrl 700', sans-serif;
+  font-weight: 700;
+  padding: 15px 40px;
+  font-size: 14px;
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+}
 /*# sourceMappingURL=style.css.map */
