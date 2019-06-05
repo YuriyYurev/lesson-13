@@ -29,10 +29,11 @@ img
   &:focus
     outline: none
 .section
-  padding: 56px 0 100px 0
+  padding: 46px 0 100px 0
   &-title
     font-size: 24px
     +bold
+    text-align: center
   &-subtitle
     font-size: 16px
   &-description
@@ -46,6 +47,12 @@ img
     outline: none
     border: 1px solid $main-color
     transition: 0.2s
+.arrows
+  &__left, &__right
+    transition: 2s
+    &:hover
+      cursor: pointer
+      max-width: 44px
 @media (max-width: 567px)
   .section
     padding: 32px 0
