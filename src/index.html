@@ -90,12 +90,12 @@
           <span class="section-subtitle offer__subtitle wow fadeIn" data-wow-delay="0.3s">Оставьте заявку на разработку 
             бесплатного дизайн-проекта!</span>
           <!-- /.section-subtitle -->
-          <form action="" class="form offer__form">
-            <input type="text" class="input offer__input wow fadeIn" data-wow-delay="0.4s" placeholder="Ваше имя">
-            <input type="tel" class="input offer__input wow fadeIn" data-wow-delay="0.4s" placeholder="Ваш телефон">
+          <form action="#" class="form offer__form" id="offer-form">
+            <input type="text" name="username" class="input offer__input wow fadeIn" data-wow-delay="0.4s" placeholder="Ваше имя">
+            <input type="tel" name="phone" class="input offer__input wow fadeIn" id="offer-tel" data-wow-delay="0.4s" placeholder="Ваш телефон">
+            <button class="button offer__button wow fadeIn" data-wow-delay="0.5s">Получить бесплатный дизайн-проект</button>
           </form>
           <!-- /.form offer__form -->
-          <button class="button offer__button wow fadeIn" data-wow-delay="0.5s">Получить бесплатный дизайн-проект</button>
           <div class="offer-info">
             <span class="section-description offer-info__description wow fadeIn" data-wow-delay="0.6s">Наш менеджер перезвонит Вам в течение 60 секунд</span>
             <div class="offer-connection">
@@ -230,6 +230,118 @@
   </section>
   <!-- /.section -->
 
+<div class="section steps">
+  <div class="container">
+    <h2 class="section-title steps__title">Наши специалисты готовы выехать на замер в любое удобное для Вас время</h2>
+    <!-- /.section-title steps__title -->
+    <span class="section-subtitle steps__subtitle">5 шагов до ремонта</span>
+    <!-- /.section-subtitle steps__subtitle -->
+    <div class="steps-block">
+      <div class="step">
+        <div class="step__image">
+          <img src="img/steps/woman-with-headset.png" alt="">
+        </div>
+        <!-- /.step__image -->
+        <p class="step__text">Вы звоните нам или&nbsp;оставляете заявку</p>
+        <!-- /.step__text -->
+      </div>
+      <!-- /.step -->
+      <div class="step">
+        <div class="step__image">
+          <img src="img/steps/wall-clock.png" alt="">
+        </div>
+        <!-- /.step__image -->
+        <p class="step__text">Согласуем удобное для&nbsp;Вас время выезда специалиста на замер</p>
+        <!-- /.step__text -->
+      </div>
+      <!-- /.step -->
+      <div class="step">
+        <div class="step__image">
+          <img src="img/steps/money.png" alt="">
+        </div>
+        <!-- /.step__image -->
+        <p class="step__text">Рассчитываем смету согласовываем<br>с Вами</p>
+        <!-- /.step__text -->
+      </div>
+      <!-- /.step -->
+      <div class="step">
+        <div class="step__image">
+          <img src="img/steps/folded-document.png" alt="">
+        </div>
+        <!-- /.step__image -->
+        <p class="step__text">Подписываем договор закупаем материал по&nbsp;оптовым ценам</p>
+        <!-- /.step__text -->
+      </div>
+      <!-- /.step -->
+      <div class="step">
+        <div class="step__image">
+          <img src="img/steps/calendar.png" alt="">
+        </div>
+        <!-- /.step__image -->
+        <p class="step__text">Выполняем ремонт в&nbsp;указанные сроки</p>
+        <!-- /.step__text -->
+      </div>
+      <!-- /.step -->
+    </div>
+    <!-- /.steps-block -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.section steps -->
+
+<section class="section">
+  <div class="brif">
+    <div class="container">
+      <div class="brif-block">
+        <div class="interview brif__interview">
+          <h3 class="interview__title">Мы можем озвучить Вам примерную стоимость работы и материалов по телефону</h3>
+          <span class="interview__subtitle">Для этого нужно ответить на 4 вопроса:</span>
+          <ul class="interview-list">
+            <li class="interview-list__item">
+              <span class="interview-list__counter">1</span> <!-- /.interview-list__counter -->
+              <span class="interview-list__text">Какова площадь помещения?</span> <!-- /.interview-list__text -->
+            </li>
+            <!-- /.interview-list__item -->
+            <li class="interview-list__item">
+              <span class="interview-list__counter">2</span> <!-- /.interview-list__counter -->
+              <span class="interview-list__text">У&nbsp;Вас&nbsp;новостройка&nbsp;или&nbsp;вторичнное жилье?</span> <!-- /.interview-list__text -->
+            </li>
+            <!-- /.interview-list__item -->
+            <li class="interview-list__item">
+              <span class="interview-list__counter">3</span> <!-- /.interview-list__counter -->
+              <span class="interview-list__text">Где находится помещение, в&nbsp;котором будет производиться&nbsp;ремонт?</span> <!-- /.interview-list__text -->
+            </li>
+            <!-- /.interview-list__item -->
+            <li class="interview-list__item">
+              <span class="interview-list__counter">4</span> <!-- /.interview-list__counter -->
+              <span class="interview-list__text">Назначение помещения?</span> <!-- /.interview-list__text -->
+            </li>
+            <!-- /.interview-list__item -->
+          </ul>
+          <!-- /.interview-list -->
+        </div>
+        <!-- /.interview brif__interview -->
+        <div class="form brif__form">
+          <h3 class="form__title">Оставьте заявку на бесплатный расчет ремонта по телефону</h3>
+          <span class="form__subtitle">Для этого заполните форму ниже</span>
+          <form action="#" id="brif-form">
+            <input type="text" name="username" class="input brif__input" placeholder="Ваше имя">
+            <input type="tel" name="phone" class="input brif__input" id="brif-tel" placeholder="Ваш телефон">
+            <button class="button brif__button">Рассчитать стоимость</button>
+            <span class="form__description">Мы перезвоним Вам в&nbsp;течение 60 секунд</span>
+            <!-- /.button brif__button -->
+          </form>
+        </div>
+        <!-- /.form brif__form -->
+      </div>
+      <!-- /.brif-block -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.brif -->
+</section>
+<!-- /.section -->
+
   <div class="modal" id="modal">
     <div class="modal-dialog">
       <button class="modal-dialog__close" id="close">&times;</button>
@@ -249,11 +361,54 @@
   <script src="js/button.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/wow.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
   <script>
   // Подключение WOW.js
   new WOW().init();
-  // Скрипт слайдера
   $(document).ready(function(){
+    /* Валидация формы */
+    $('#brif-form').validate({
+      rules: {
+        username: {
+          required: true,
+          minlength: 2,
+          maxlength: 15
+        },
+        phone: "required"
+      },
+      messages: {
+        username: {
+          required: "Укажите имя!",
+          minlength: jQuery.validator.format("Нужно символов: {0}"),
+          maxlength: jQuery.validator.format("Нужно не больше {0} символов")
+        },
+        phone: "Введите номер телефона"
+      }
+    });
+    $('#offer-form').validate({
+      rules: {
+        username: {
+          required: true,
+          minlength: 2,
+          maxlength: 15
+        },
+        phone: "required"
+      },
+      messages: {
+        username: {
+          required: "Укажите имя!",
+          minlength: jQuery.validator.format("Нужно символов: {0}"),
+          maxlength: jQuery.validator.format("Нужно не больше {0} символов")
+        },
+        phone: "Введите номер телефона"
+      }
+    });
+    /* Маска для телефона */
+    $('#brif-tel').mask("+7 (999)-999-99-99")
+    $('#offer-tel').mask("+7 (999)-999-99-99")
+
+    // Скрипт слайдера
     $('.slider').slick({
       infinite: true,
       slidesToShow: 3,
