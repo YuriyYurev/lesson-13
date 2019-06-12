@@ -119,6 +119,12 @@ img {
   }
 }
 
+.error {
+  display: inline-block;
+  margin-bottom: 18px;
+  width: 100%;
+}
+
 /* импорт навигационной панели */
 .navbar {
   padding: 8px 0;

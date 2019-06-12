@@ -327,6 +327,7 @@
           <form action="#" id="brif-form">
             <input type="text" name="username" class="input brif__input" placeholder="Ваше имя">
             <input type="tel" name="phone" class="input brif__input" id="brif-tel" placeholder="Ваш телефон">
+            <input type="email" name="mail" class="input brif__input" id="brif-mail" placeholder="Ваша почта">
             <button class="button brif__button">Рассчитать стоимость</button>
             <span class="form__description">Мы перезвоним Вам в&nbsp;течение 60 секунд</span>
             <!-- /.button brif__button -->
@@ -424,7 +425,11 @@
           minlength: 2,
           maxlength: 15
         },
-        phone: "required"
+        phone: "required",
+        mail: {
+          email: true,
+          required: true
+        }
       },
       messages: {
         username: {
@@ -432,7 +437,11 @@
           minlength: jQuery.validator.format("Нужно символов: {0}"),
           maxlength: jQuery.validator.format("Нужно не больше {0} символов")
         },
-        phone: "Введите номер телефона"
+        phone: "Введите номер телефона",
+        mail: {
+          required: "Заполните поле!",
+          email: "Введите корректный email!"
+        }
       }
     });
     $('#offer-form').validate({
@@ -450,7 +459,7 @@
           minlength: jQuery.validator.format("Нужно символов: {0}"),
           maxlength: jQuery.validator.format("Нужно не больше {0} символов")
         },
-        phone: "Введите номер телефона"
+        phone: "Введите номер телефона!"
       }
     });
     /* Маска для телефона */
